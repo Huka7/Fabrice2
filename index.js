@@ -7,6 +7,7 @@ const Client = new Discord.Client({
 });
 
 const prefix = "!";
+prefix: process.env.PREFIX
 
 Client.on("ready", () => {
     Client.user.setStatus("online");
