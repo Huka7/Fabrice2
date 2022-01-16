@@ -1,5 +1,12 @@
 const { quote } = require("@discordjs/builders");
 const Discord = require("discord.js");
+const Discord = require("discord.js");
+const client = new Discord.Client();
+require("dotenv").config();
+
+client.on("ready", () => {
+    console.log("I'm ready !");
+});
 const Client = new Discord.Client({
     intents: [
         Discord.Intents.FLAGS.GUILDS,
