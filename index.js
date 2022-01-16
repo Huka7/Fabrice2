@@ -82,5 +82,5 @@ Client.on("messageCreate", message => {
       message.channel.send({ embeds: [embed]});
   }
       });
-
+npm install dotenv
 client.login(process.env.TOKEN);
