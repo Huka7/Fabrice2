@@ -1,12 +1,4 @@
 const { quote } = require("@discordjs/builders");
-const Discord = require("discord.js");
-const Discord = require("discord.js");
-const client = new Discord.Client();
-require("dotenv").config();
-
-client.on("ready", () => {
-    console.log("I'm ready !");
-});
 const Client = new Discord.Client({
     intents: [
         Discord.Intents.FLAGS.GUILDS,
@@ -89,5 +81,5 @@ Client.on("messageCreate", message => {
       message.channel.send({ embeds: [embed]});
   }
       });
-npm install dotenv
+
 client.login(process.env.TOKEN);
